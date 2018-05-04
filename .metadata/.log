@@ -1,0 +1,80 @@
+!SESSION 2018-05-01 17:13:57.033 -----------------------------------------------
+eclipse.buildId=4.7.3.M20180330-0640
+java.version=1.8.0_101
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_AU
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -keyring /Users/Pro/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -data /Users/Pro/JsfWorkspace1 -product org.eclipse.epp.package.jee.product -keyring /Users/Pro/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2018-05-01 17:14:02.876
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2018-05-01 22:11:48.628
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2018-05-02 11:32:26.535
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.jface.text 2 0 2018-05-02 22:16:55.421
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-05-02 22:16:55.423
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.wst.validation 4 0 2018-05-02 22:39:19.563
+!MESSAGE Facelet HTML Validator finished validating: file:/Users/Pro/JsfWorkspace1/hello/WebContent/WEB-INF/myresponse.xhtml
+
+!ENTRY org.eclipse.wst.validation 4 0 2018-05-02 22:39:19.597
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jst.jsf.facelet.ui.internal.validation.DefaultFaceletValidationStrategy.validateRoot(DefaultFaceletValidationStrategy.java:108)
+	at org.eclipse.jst.jsf.facelet.ui.internal.validation.DefaultFaceletValidationStrategy.validateDocument(DefaultFaceletValidationStrategy.java:90)
+	at org.eclipse.jst.jsf.facelet.ui.internal.validation.DefaultFaceletValidationStrategy.validateFaceletHtml(DefaultFaceletValidationStrategy.java:63)
+	at org.eclipse.jst.jsf.facelet.ui.internal.validation.DefaultFaceletValidationStrategy.doValidate(DefaultFaceletValidationStrategy.java:43)
+	at org.eclipse.jst.jsf.facelet.ui.internal.validation.AbstractFaceletValidationStrategy.validateFile(AbstractFaceletValidationStrategy.java:96)
+	at org.eclipse.jst.jsf.facelet.ui.internal.validation.HTMLValidator.validate(HTMLValidator.java:57)
+	at org.eclipse.wst.validation.Validator$V2.validate(Validator.java:1178)
+	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:704)
+	at org.eclipse.wst.validation.internal.ValManager$1.visit(ValManager.java:665)
+	at org.eclipse.wst.validation.internal.ValManager.accept(ValManager.java:783)
+	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:669)
+	at org.eclipse.wst.validation.internal.ValBuilderJob$Visitor.visit(ValBuilderJob.java:327)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.deltaBuild(ValBuilderJob.java:211)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.run(ValBuilderJob.java:179)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.runInWorkspace(ValBuilderJob.java:126)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.jface.text 2 0 2018-05-03 00:05:18.891
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-05-03 00:05:18.893
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-05-03 00:05:19.660
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-05-03 00:05:19.675
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+!SESSION 2018-05-04 22:51:32.916 -----------------------------------------------
+eclipse.buildId=4.7.3.M20180330-0640
+java.version=1.8.0_101
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_AU
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/Pro/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/Pro/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2018-05-04 22:51:45.138
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface.text 2 0 2018-05-04 22:52:49.640
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-05-04 22:52:49.649
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'

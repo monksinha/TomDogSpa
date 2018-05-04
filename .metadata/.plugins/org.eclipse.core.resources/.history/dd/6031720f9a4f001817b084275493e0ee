@@ -1,0 +1,10 @@
+package hello;
+
+import javax.faces.bean.ManagedBean;
+
+@ManagedBean
+public class Student {
+	
+	pri
+
+}

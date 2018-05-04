@@ -1,0 +1,7 @@
+127.0.0.1 - - [04/May/2018:22:55:28 +1000] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [04/May/2018:22:55:29 +1000] "GET /hello/faces/hello-world.xhtml HTTP/1.1" 200 667
+0:0:0:0:0:0:0:1 - - [04/May/2018:22:55:34 +1000] "POST /hello/faces/hello-world.xhtml;jsessionid=3FDF6DD87BF124016CF39CA6726FDF89 HTTP/1.1" 200 173
+0:0:0:0:0:0:0:1 - - [04/May/2018:22:57:10 +1000] "GET /hello/faces/hello-world.xhtml HTTP/1.1" 200 668
+0:0:0:0:0:0:0:1 - - [04/May/2018:22:57:12 +1000] "GET /favicon.ico HTTP/1.1" 404 1085
+0:0:0:0:0:0:0:1 - - [04/May/2018:22:57:12 +1000] "GET /favicon.ico HTTP/1.1" 404 1085
+0:0:0:0:0:0:0:1 - - [04/May/2018:22:57:19 +1000] "POST /hello/faces/hello-world.xhtml;jsessionid=699D9DD7200430FD4D4BCFC2742C0B6D HTTP/1.1" 200 173
