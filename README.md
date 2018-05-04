@@ -14,7 +14,7 @@ The requirements of the application can be found on page number 10 in the assign
 
 - UI and testing by by Mr. Zheqi Zhang (aka "Sid") (githubHandle: Tinyzz )(uzheqiz@student.unimelb.edu.au)
 
-- Backend and architecture design by Mr. Utkarsh Sinha (aka "Ugo") (githubHandle: monkSinha)(usinha@student.unimelb.edu.au)
+- Backend, architecture design and tasks breakdown by Mr. Utkarsh Sinha (aka "Ugo") (githubHandle: monkSinha)(usinha@student.unimelb.edu.au)
 
 
  
