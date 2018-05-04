@@ -17,4 +17,6 @@ The requirements of the application can be found on page number 10 in the assign
 - Backend, architecture design and tasks breakdown by Mr. Utkarsh Sinha (aka "Ugo") (githubHandle: monkSinha)(usinha@student.unimelb.edu.au)
 
 
+=== REQUESTING THE CONTRIBUTORS/SUPERVISORS TO INSTALL "ZENHUB" TO SEE THE AGILE/SCRUM BOARD ===
+
  
