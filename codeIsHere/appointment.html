@@ -1,0 +1,301 @@
+<html>
+   <head>
+      <title>Appointment</title>
+      <link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="laydate/laydate.js"></script> <!-- 改成你的路径 -->
+<script>
+    lay('#version').html('-v'+ laydate.v);
+
+    //执行一个laydate实例
+    //常规用法
+    laydate.render({
+      elem: '#test1' //指定元素
+    });
+    //国际版
+    laydate.render({
+      elem: '#test1-1'
+      ,lang: 'en'
+    }); 
+    //年选择器
+    laydate.render({
+      elem: '#test2'
+      ,type: 'year'
+    });
+    //年月选择器
+    laydate.render({
+      elem: '#test3'
+      ,type: 'month'
+    });
+    //时间选择器
+    laydate.render({
+      elem: '#test4'
+      ,type: 'time'
+    });
+    //时间选择器
+    laydate.render({
+      elem: '#test5'
+      ,type: 'datetime'
+    });
+    //日期范围
+    laydate.render({
+      elem: '#test6'
+      ,range: true
+    });
+    //年范围
+    laydate.render({
+      elem: '#test7'
+      ,type: 'year'
+      ,range: true
+    });
+    //年月范围
+    laydate.render({
+      elem: '#test8'
+      ,type: 'month'
+      ,range: true
+    });
+    //时间范围
+    laydate.render({
+      elem: '#test9'
+      ,type: 'time'
+      ,range: true
+    });
+    //日期时间范围
+    laydate.render({
+      elem: '#test10'
+      ,type: 'datetime'
+      ,range: true
+    }); 
+    //墨绿主题
+    laydate.render({
+      elem: '#test29'
+      ,theme: 'molv'
+    });
+    //自定义颜色
+    laydate.render({
+      elem: '#test30'
+      ,theme: '#393D49'
+    });
+    //格子主题
+    laydate.render({
+      elem: '#test31'
+      ,theme: 'grid'
+    });
+
+</script>
+     <style>
+         form {width: 520px; height: 680px; margin:0 auto; margin-top: 200px; padding: 20px 20px 20px 20px; border-style: solid; border-width: 5px; border-color: black;background-color:white;}
+         body {background-color:pink;}
+     </style>
+     <style>
+/*the container must be positioned relative:*/
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+.select-selected {
+  background-color: DodgerBlue;
+}
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+</style>
+   
+
+
+    <form>
+    <div class="form-group">
+        <label>Fullname</label>
+        <input type="text"  placeholder="Please enter fullname">
+    </div>
+
+
+
+
+ <div class="form-group" >
+        <label>Dog Registerd</label>
+
+<div class="custom-select" style="width:200px;">
+  <select>
+     <option value="1">Choose your dog:</option>
+    <option value="1">Pug</option>
+    <option value="2">Cogi</option>
+    <option value="3">Husky</option>
+    <option value="4">Ford</option>
+    <option value="5">Honda</option>
+    <option value="6">Jaguar</option>
+  </select>
+</div>
+
+</div> 
+
+
+
+<label>Grooming Type</label>
+
+<!--surround the select box with a "custom-select" DIV element. Remember to set the width:-->
+<div class="custom-select" style="width:200px;">
+  <select>
+    <option value="0">Choose your grooming:</option>
+    <option value="1">Wash Only</option>
+    <option value="2">Wash and Nail Clipping</option>
+    <option value="3">Deluxe Grooming</option>
+    <option value="4">Odor Control</option>
+    <option value="5">Cleaning Up</option>
+    <option value="6">Insect Inspection</option>
+  </select>
+</div>
+
+
+<div>
+    <div class="form-group" >
+        <label>Appointment TIme</label>
+    </div>
+</div>
+<script>
+var x, i, j, selElmnt, a, b, c;
+/*look for any elements with the class "custom-select":*/
+x = document.getElementsByClassName("custom-select");
+for (i = 0; i < x.length; i++) {
+  selElmnt = x[i].getElementsByTagName("select")[0];
+  /*for each element, create a new DIV that will act as the selected item:*/
+  a = document.createElement("DIV");
+  a.setAttribute("class", "select-selected");
+  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+  x[i].appendChild(a);
+  /*for each element, create a new DIV that will contain the option list:*/
+  b = document.createElement("DIV");
+  b.setAttribute("class", "select-items select-hide");
+  for (j = 0; j < selElmnt.length; j++) {
+    /*for each option in the original select element,
+    create a new DIV that will act as an option item:*/
+    c = document.createElement("DIV");
+    c.innerHTML = selElmnt.options[j].innerHTML;
+    c.addEventListener("click", function(e) {
+        /*when an item is clicked, update the original select box,
+        and the selected item:*/
+        var y, i, k, s, h;
+        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+        h = this.parentNode.previousSibling;
+        for (i = 0; i < s.length; i++) {
+          if (s.options[i].innerHTML == this.innerHTML) {
+            s.selectedIndex = i;
+            h.innerHTML = this.innerHTML;
+            y = this.parentNode.getElementsByClassName("same-as-selected");
+            for (k = 0; k < y.length; k++) {
+              y[k].removeAttribute("class");
+            }
+            this.setAttribute("class", "same-as-selected");
+            break;
+          }
+        }
+        h.click();
+    });
+    b.appendChild(c);
+  }
+  x[i].appendChild(b);
+  a.addEventListener("click", function(e) {
+      /*when the select box is clicked, close any other select boxes,
+      and open/close the current select box:*/
+      e.stopPropagation();
+      closeAllSelect(this);
+      this.nextSibling.classList.toggle("select-hide");
+      this.classList.toggle("select-arrow-active");
+    });
+}
+function closeAllSelect(elmnt) {
+  /*a function that will close all select boxes in the document,
+  except the current select box:*/
+  var x, y, i, arrNo = [];
+  x = document.getElementsByClassName("select-items");
+  y = document.getElementsByClassName("select-selected");
+  for (i = 0; i < y.length; i++) {
+    if (elmnt == y[i]) {
+      arrNo.push(i)
+    } else {
+      y[i].classList.remove("select-arrow-active");
+    }
+  }
+  for (i = 0; i < x.length; i++) {
+    if (arrNo.indexOf(i)) {
+      x[i].classList.add("select-hide");
+    }
+  }
+}
+/*if the user clicks anywhere outside the select box,
+then close all select boxes:*/
+document.addEventListener("click", closeAllSelect);</script>
+
+
+
+
+
+
+
+<div>
+   
+  <input type="text" class="demo-input" placeholder="Select Date" id="test1-1">
+   <input type="text" class="demo-input" placeholder="Select Time" id="test4">
+</div>
+
+  <div class="form-group">
+   
+    <label for="name">Special Instruction</label>
+    <textarea class="form-control" rows="6">
+                        
+</textarea>
+</div>
+
+
+
+
+
+    <div class="button">
+        <input type="submit" class="btn btn-block btn-primary"></input>
+    </div>
+    </form> 
+    </body>
+</html> 
